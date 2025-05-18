@@ -1,0 +1,50 @@
+/* Se generar reglas globales eliminado márgenes y rellenos por defecto*/
+/* Selector universal: '*' aplica estas reglas a todos los elementos del documento */
+* {
+    margin: 0;      /* Elimina el margen por defecto de todos los elementos */
+    padding: 0;     /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box;     /* El ancho y alto incluyen padding y borde */
+}
+/* Estilos para el cuerpo de la página*/
+body{
+    font-family: 'Poppins', sans-serif;     /* Fuente para el cuerpo de la página */
+    padding: 50px;                          /* Espaciado interno en todo el cuerpo */
+}
+/* Título principal (h1) */
+h1{
+    font-size: 50px;                                      /* Tamaño de letra para el título */
+    padding: 10px;                                        /* Espaciado interno dentro del título */
+    text-align: center;                                   /* Centrado horizontal */
+    margin-bottom: 20px;                                  /* Separación con el contenido siguiente */
+    color: #f019c8;                                     /* Color Rosa */
+    border: solid 5px #6c0c5a;                          /* Borde grueso de color púrpura oscuro */
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);       /* Sombra para dar profundidad */
+}
+/* Navegación  */
+nav {
+    text-align: center;         /* Centrado del texto en la barra */
+    padding: 30px;              /* Espaciado interno */
+    margin-bottom: 35px;        /* Separación del contenido siguiente */
+}
+
+/* Enlaces dentro de la navegación */
+nav a {
+    text-decoration: none;          /* Elimina el subrayado por defecto de los enlaces */
+    color: black;                 /* Color del texto negro */
+    font-size: 50px;                /* Tamaño de texto de los link */
+    padding: 10px;                  /* Espaciado interno alrededor del texto */
+    margin-right: 150px;            /* Margen derecho entre enlaces */
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+nav a:hover {
+    color: blue;                           /* Cambia el color del texto al pasar el mouse a un azul */
+    background-color: greenyellow;         /* Fondo llamativo al pasar el mouse a un verde lima */
+}
+
+/* Imágen */
+img {
+    width: 100%;                              /* Ocupa todo el ancho del contenedor padre */
+    height: 50%;                              /* Ocupa todo el alto disponible equivalente al 50% de la altura del contenedor padre */
+    border: #fbff03 solid 10px;             /* Borde amarillo brillante */
+}
