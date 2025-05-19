@@ -1,0 +1,87 @@
+/* Se generar reglas globales eliminado márgenes y rellenos por defecto*/
+/* Selector universal: '*' aplica estas reglas a todos los elementos del documento */
+* {
+    margin: 0;                  /* Elimina el margen por defecto de todos los elementos */
+    padding: 0;                 /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box;     /* El ancho y alto incluyen padding y borde */
+}
+body {
+    background-image: url(Fondo_Dragon/background.jpg);     /* Aplica una imagen de fondo desde la carpeta 'Fondo' */
+    background-size: cover;                                 /* La imagen cubre todo el fondo, ajustándose al tamaño */
+    background-attachment: fixed;                           /* La imagen permanece fija al hacer scroll */
+    width: 98%;                                             /* El body ocupará el 98% del ancho de la ventana */
+    height: 100vh;                                          /* El cuerpo ocupa toda la altura visible de la ventana */
+}
+main{
+    width: 99vw;        /* Ancho casi completo del área visible del navegador */
+    height: 400vh;      /* Altura 4 veces la altura visible del navegador  */
+    margin: auto;       /* Centra horizontalmente el contenido */
+}
+h1{
+    font-family: 'Bangers', cursive;                          /* Fuente estilo cómic, decorativa */
+    text-align: center;                                       /* Centra el texto horizontalmente */
+    font-size: 50px;                                          /* Tamaño grande para el título */
+    font-style: italic;                                       /* Texto en cursiva */
+    letter-spacing: 10px;                                     /* Espacio amplio entre letras */
+    color: black;                                           /* Color negro para el texto */
+    text-transform: uppercase;                                /* Convierte el texto a mayúsculas */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);            /* Sombra ligera para darle relieve */
+    margin-bottom: 1rem;                                      /* Espacio debajo del título para separar del contenido siguiente */
+}
+
+/* PERSONAJES*/
+.Personajes {
+    width: 97vw;                                    /* Anchura: 97% del ancho visible del navegador */
+    height: 470vh;                                  /* Altura: 470% de la altura visible del navegador */
+    margin: 0 auto;                                 /* Centrado horizontal automático */
+    text-align: center;                             /* Centra el contenido dentro del div */
+    background-color: rgba(255, 255, 255, 0.3);   /* Fondo blanco semi-transparente (30% opacidad) */
+    background-position: center;                    /* coloca la imagen de fondo en el centro del contenedor */
+    background-size: contain;                       /* Ajustar el tamaño de la imagen de fondo */
+}
+.galeria{
+    text-align: center;
+}
+.galeria img{
+    display: inline-block;
+}
+/*01 CARTA*/
+.Carta {
+    width: 250px;                                               /* Ancho fijo 250px */
+    height: 400px;                                              /* Alto fijo 400px */
+    border: 5px solid #000;                                   /* Borde negro de 5px */
+    border-radius: 12px;                                        /* Bordes redondeados */
+    background: linear-gradient(white, white, white);    /* Fondo blanco  */
+    text-align: center;                                        /* Centra contenido horizontalmente */
+    display: inline-block;                                     /* Permite que haya varias cartas en línea */
+    margin: 1em;                                               /* Margen alrededor de la carta */
+    padding: 1em;                                              /* Espacio interno */
+}
+.Carta img:hover{
+    background-color: #ace6fc;
+}
+.Carta img {
+    max-width: 100%;                             /* La imagen no supera el ancho del contenedor */
+    height: 320px;                               /* Altura sera de 350px */
+    object-fit: contain;                         /* Ajusta la imagen dentro del contenedor sin recortarla */
+    background-color: rgb(255, 255, 255);      /* Fondo blanco detrás de la imagen */
+}
+.Carta h3 {
+    font-size: 1.1rem;                         /* Tamaño de fuente  */
+    font-style: italic;                          /* Texto en cursiva */
+    font-weight: bold;                           /* Negrita */
+    font-family: 'Bangers', cursive;             /* Fuente decorativa tipo cómic */
+    text-transform: uppercase;                   /* Texto en mayúsculas */
+    letter-spacing: 1px;                         /* Espaciado entre letras */
+    text-shadow: 2px 2px 9px rgb(0, 0, 0);     /* Sombra negra desenfocada (efecto relieve) */
+}
+@media (max-width: 992px){
+    .galeria img{
+        max-width: 90%;
+    }
+}
+@media (max-width: 768px){
+    .galeria img{
+        max-width: 100%;
+    }
+}
