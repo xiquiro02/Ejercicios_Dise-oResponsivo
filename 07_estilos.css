@@ -10,17 +10,19 @@ body {
     background-size: cover;                                 /* La imagen cubre todo el fondo, ajustándose al tamaño */
     background-attachment: fixed;                           /* La imagen permanece fija al hacer scroll */
     width: 98%;                                             /* El body ocupará el 98% del ancho de la ventana */
-    height: 100vh;                                          /* El cuerpo ocupa toda la altura visible de la ventana */
+    height: 100vh;                                          /* El cuerpo ocupa toda la altura del 100% del alto de la ventana */
 }
+/* CONTENEDOR <main> */
 main{
     width: 99vw;        /* Ancho casi completo del área visible del navegador */
     height: 400vh;      /* Altura 4 veces la altura visible del navegador  */
     margin: auto;       /* Centra horizontalmente el contenido */
 }
+/* TÍTULO PRINCIPAL (h1) */
 h1{
     font-family: 'Bangers', cursive;                          /* Fuente estilo cómic, decorativa */
     text-align: center;                                       /* Centra el texto horizontalmente */
-    font-size: 50px;                                          /* Tamaño grande para el título */
+    font-size: 50px;                                          /* Tamaño de 50px para el título */
     font-style: italic;                                       /* Texto en cursiva */
     letter-spacing: 10px;                                     /* Espacio amplio entre letras */
     color: black;                                           /* Color negro para el texto */
@@ -28,60 +30,48 @@ h1{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);            /* Sombra ligera para darle relieve */
     margin-bottom: 1rem;                                      /* Espacio debajo del título para separar del contenido siguiente */
 }
-
 /* PERSONAJES*/
 .Personajes {
     width: 97vw;                                    /* Anchura: 97% del ancho visible del navegador */
-    height: 470vh;                                  /* Altura: 470% de la altura visible del navegador */
+    height: 640vh;                                  /* Altura: equivalente a 6.4 veces el alto de la ventana del navegador */
     margin: 0 auto;                                 /* Centrado horizontal automático */
     text-align: center;                             /* Centra el contenido dentro del div */
     background-color: rgba(255, 255, 255, 0.3);   /* Fondo blanco semi-transparente (30% opacidad) */
     background-position: center;                    /* coloca la imagen de fondo en el centro del contenedor */
     background-size: contain;                       /* Ajustar el tamaño de la imagen de fondo */
 }
-.galeria{
-    text-align: center;
+.galeria {
+    text-align: center;         /* Centra todo el contenido dentro de la galería */
 }
-.galeria img{
-    display: inline-block;
-}
-/*01 CARTA*/
+/*CARTAS*/
 .Carta {
-    width: 250px;                                               /* Ancho fijo 250px */
-    height: 400px;                                              /* Alto fijo 400px */
-    border: 5px solid #000;                                   /* Borde negro de 5px */
-    border-radius: 12px;                                        /* Bordes redondeados */
+    width: 22%;                                               /* La carta ocupa el 22% del ancho de su contenedor */
+    height: auto;                                             /* La altura se ajusta automáticamente al contenido */
+    border: 5px solid #000;                                 /* Borde negro de 5px */
+    border-radius: 12px;                                      /* Bordes redondeados en las esquinas*/
     background: linear-gradient(white, white, white);    /* Fondo blanco  */
-    text-align: center;                                        /* Centra contenido horizontalmente */
-    display: inline-block;                                     /* Permite que haya varias cartas en línea */
-    margin: 1em;                                               /* Margen alrededor de la carta */
-    padding: 1em;                                              /* Espacio interno */
+    text-align: center;                                        /* Centra contenido horizontalmente dentro de la carta*/
+    display: inline-block;                                     /* Permite colocar múltiples cartas una al lado de otra */
+    margin: 1em;                                               /* Agrega espacio alrededor de la carta */
+    padding: 1em;                                              /* Agrega espacio interno entre el borde y el contenido */
 }
-.Carta img:hover{
-    background-color: #ace6fc;
+
+/* Efecto al pasar el mouse sobre la imagen dentro de la carta */
+.Carta img:hover {
+    background-color: #ace6fc;          /* Cambia el fondo de la imagen a azul claro cuando se pasa el cursor */
 }
 .Carta img {
-    max-width: 100%;                             /* La imagen no supera el ancho del contenedor */
-    height: 320px;                               /* Altura sera de 350px */
+    width: 100%;                                 /* La imagen ocupa el 100% del ancho de la carta */
+    height: 320px;                               /* Altura fija sera de 320px */
     object-fit: contain;                         /* Ajusta la imagen dentro del contenedor sin recortarla */
     background-color: rgb(255, 255, 255);      /* Fondo blanco detrás de la imagen */
 }
 .Carta h3 {
-    font-size: 1.1rem;                         /* Tamaño de fuente  */
+    font-size: 1.1rem;                           /* Tamaño de fuente  */
     font-style: italic;                          /* Texto en cursiva */
-    font-weight: bold;                           /* Negrita */
+    font-weight: bold;                           /* Texto en negrita */
     font-family: 'Bangers', cursive;             /* Fuente decorativa tipo cómic */
     text-transform: uppercase;                   /* Texto en mayúsculas */
     letter-spacing: 1px;                         /* Espaciado entre letras */
     text-shadow: 2px 2px 9px rgb(0, 0, 0);     /* Sombra negra desenfocada (efecto relieve) */
-}
-@media (max-width: 992px){
-    .galeria img{
-        max-width: 90%;
-    }
-}
-@media (max-width: 768px){
-    .galeria img{
-        max-width: 100%;
-    }
 }
