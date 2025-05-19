@@ -1,0 +1,71 @@
+/* Se generar reglas globales eliminado márgenes y rellenos por defecto*/
+/* Selector universal: '*' aplica estas reglas a todos los elementos del documento */
+* {
+    margin: 0;                  /* Elimina el margen por defecto de todos los elementos */
+    padding: 0;                 /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box;     /* El ancho y alto incluyen padding y borde */
+}
+/* Estilos para el cuerpo de la página*/
+body{
+    font-family: 'Poppins', sans-serif;     /* Fuente para el cuerpo de la página */
+    padding: 50px;                          /* Espaciado interno en todo el cuerpo */
+    text-align: center;
+}
+/* Título principal (h1) */
+h1{
+    font-size: 50px;                                      /* Tamaño de letra para el título */
+    padding: 10px;                                        /* Espaciado interno dentro del título */
+    text-align: center;                                   /* Centrado horizontal */
+    margin-bottom: 20px;                                  /* Separación con el contenido siguiente */
+}
+/* Estilo para párrafos */
+p {
+    font-size: 30px;               /* Tamaño de fuente 30px para texto */
+    margin-top: 30px;              /* Espacio por encima del párrafo */
+    margin-bottom: 20px;           /* Espacio debajo del párrafo */
+}
+/* Imágen */
+img {
+    height: auto;                     /* La altura se ajusta automáticamente al contenido interno */
+    width: 80%;                       /* 80% de ancho de la pantalla */
+    border: solid black 10px;       /* Borde negro grueso */
+}
+/* Media Queries (Diseño responsivo) */
+/* Tablet: Pantallas medianas a partir de 768px */
+@media (min-width: 768px) {
+    body {
+        padding: 70px;           /* Mayor espaciado en pantallas medianas */
+    }
+
+    h1 {
+        font-size: 60px;        /* Título un poco más grande */
+    }
+    p {
+        font-size: 35px;            /* Texto más grande */
+        max-width: 80%;             /* El párrafo no ocupará más del 80% del ancho de la pantalla */
+        margin: 30px auto 20px;     /* Centrado automático con espacio arriba 30px y abajo 20px*/
+    }
+
+    img {
+        width: 60%;         /* La imagen ocupará el 60% del ancho de su contenedor, la hace más pequeña y evita que se vea muy grande en pantallas medianas */
+    }
+}
+/* Desktop: Pantallas grandes a partir de 992px */
+@media (min-width: 992px) {
+    body {
+        padding: 100px;             /* Más espacio alrededor del contenido */
+    }
+
+    h1 {
+        font-size: 70px;            /* Título un poco más grande */
+    }
+
+    p {
+        font-size: 40px;            /* Texto más grande */
+        max-width: 70%;             /* El párrafo no ocupará más del 70% del ancho de la pantalla */
+    }
+
+    img {
+        width: 50%;         /* Imagen más pequeña y proporcionada */
+    }
+}
