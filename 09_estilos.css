@@ -1,0 +1,86 @@
+/* Se generar reglas globales eliminado márgenes y rellenos por defecto*/
+/* Selector universal: '*' aplica estas reglas a todos los elementos del documento */
+* {
+    margin: 0;                  /* Elimina el margen por defecto de todos los elementos */
+    padding: 0;                 /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box;     /* El ancho y alto incluyen padding y borde */
+}
+/* Estilos para el cuerpo de la página*/
+body{
+    font-family: 'Poppins', sans-serif;     /* Fuente para el cuerpo de la página */
+    padding: 50px;                          /* Espaciado interno en todo el cuerpo */
+}
+.contenedor{
+    width: 97vw;                                    /* Anchura: 97% del ancho visible del navegador */
+    height: 640vh;                                  /* Altura: equivalente a 6.4 veces el alto de la ventana del navegador */
+    margin: 0 auto;                                 /* Centrado horizontal automático */
+    text-align: center;                             /* Centra el contenido dentro del div */
+    margin-top: 50px;
+}
+.Tarjeta{
+    width: 28%;                                               /* La carta ocupa el 22% del ancho de su contenedor */
+    height: auto;                                             /* La altura se ajusta automáticamente al contenido */
+    border: 5px solid #ffba42;                                 /* Borde negro de 5px */
+    border-radius: 12px;                                      /* Bordes redondeados en las esquinas*/
+    background: linear-gradient(rgb(244, 100, 4), rgb(119, 30, 30), rgb(85, 10, 10));    /* Fondo blanco  */
+    text-align: center;                                        /* Centra contenido horizontalmente dentro de la carta*/
+    display: inline-block;                                     /* Permite colocar múltiples cartas una al lado de otra */
+    margin: 1em;                                               /* Agrega espacio alrededor de la carta */
+    padding: 1em;                                              /* Agrega espacio interno entre el borde y el contenido */
+}
+.Tarjeta img {
+    width: 100%;                                 /* La imagen ocupa el 100% del ancho de la carta */
+    height: 320px;                               /* Altura fija sera de 320px */
+    object-fit: contain;                         /* Ajusta la imagen dentro del contenedor sin recortarla */
+    background: linear-gradient(rgb(244, 100, 4), rgb(119, 30, 30), rgb(85, 10, 10)); ;      /* Fondo blanco detrás de la imagen */
+}
+.Tarjeta h3{
+    font-size: 1.1rem;                           /* Tamaño de fuente  */
+    font-style: italic;                          /* Texto en cursiva */
+    font-weight: bold;                           /* Texto en negrita */
+    font-family: 'Bangers', cursive;             /* Fuente decorativa tipo cómic */
+    text-transform: uppercase;                   /* Texto en mayúsculas */
+    letter-spacing: 1px;                         /* Espaciado entre letras */
+    color: white;
+}
+/* Media Queries (Diseño responsivo) */
+/* Estilos para impresión  */
+@media print {
+    body {
+        font-family: serif;         /* Cambia la fuente a serif, más legible en papel */
+        color: black;             /* Asegura que el texto se imprima en negro */
+        background: none;           /* Elimina cualquier imagen o color de fondo para ahorrar tinta */
+    }
+    /* Contenedor principal ajustado para impresión */
+    .contenedor {
+        width: 100%;            /* Usa todo el ancho de la hoja impresa */
+        text-align: left;       /* Alinea el contenido a la izquierda */
+        margin: 0 auto;         /* Centra el contenedor horizontalmente */
+    }
+    /* Estilo para cada tarjeta en modo impresión */
+    .Tarjeta {
+        display: block;                 /* Hace que cada tarjeta ocupe toda la fila */
+        width: 50%;                     /* Ocupa la mitad del ancho de la página */
+        margin: 10px auto;              /* Margen vertical de 10px y centrado horizontal */
+        page-break-inside: avoid;       /* Evita que la tarjeta se corte entre dos páginas al imprimir */
+        border: 2px solid #000;       /* Aplica un borde negro*/
+        color: black;                 /* Asegura que el texto sea negro */
+    }
+    /* Estilo del título principal al imprimir */
+    h1 {
+        margin-top: 5px;                                        /* Espacio superior reducido */
+        margin-bottom: 20px;                                    /* Espacio inferior para separar del contenido siguiente */
+        font-family: 'Times New Roman', Times, serif;           /* Fuente clásica para impresión */
+        font-size: 18px;                                        /* Tamaño de la fuente */
+        text-align: center;                                     /* Centrado del título en la hoja */
+    }
+    /* Estilo de las imágenes dentro de las tarjetas al imprimir */
+    .Tarjeta img {
+        width: 90px;                   /* Ancho reducido para ahorrar espacio */
+        height: 100px;                 /* Altura proporcional */
+        display: block;                /* Asegura que la imagen sea un bloque separado */
+        margin: 0 auto;                /* Centrado horizontal de la imagen */
+        filter: grayscale(100%);       /* Convierte la imagen a blanco y negro */
+    }
+}
+
