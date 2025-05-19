@@ -1,0 +1,56 @@
+/* Se generar reglas globales eliminado márgenes y rellenos por defecto*/
+/* Selector universal: '*' aplica estas reglas a todos los elementos del documento */
+* {
+    margin: 0;      /* Elimina el margen por defecto de todos los elementos */
+    padding: 0;     /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box;     /* El ancho y alto incluyen padding y borde */
+}
+/* Estilos para el cuerpo de la página*/
+body{
+    font-family: 'Poppins', sans-serif;     /* Fuente para el cuerpo de la página */
+    padding: 50px;                          /* Espaciado interno en todo el cuerpo */
+}
+/* Título principal (h1) */
+h1{
+    font-size: 50px;                                      /* Tamaño de letra para el título */
+    margin-bottom: 20px;                                  /* Separación con el contenido siguiente */
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);       /* Sombra para dar profundidad */
+    color: #ff1a03;                                     /* Color rojo anaranjado para el título */
+}
+/* Estilo para párrafos */
+p {
+    font-size: 20px;               /* Tamaño de fuente 20px para texto */
+    margin-top: 30px;              /* Espacio por encima del párrafo */
+    margin-bottom: 20px;           /* Espacio debajo del párrafo */
+}
+
+/* Media Queries (Diseño responsivo) */
+
+ /* Pantallas pequeñas (móviles pequeños, mayores a 480px)  */
+@media (min-width: 480px){
+    
+    body{
+        background-color: #03ffff;  /* Azul celeste vibrante */
+    }
+}
+ /* Pantallas tablets y móviles grandes (entre 481px y 767px) */
+ @media (min-width: 481px) and (max-width: 767px){
+
+    body{
+        background-color: #ec03ff;  /* Fucsia llamativo */
+    }
+}
+ /* Pantallas Laptops y pantallas medianas (entre 992px y 1199px) */
+ @media (min-width: 992px) and (max-width: 1199px){
+
+    body{
+        background-color: #ffaf03; /* Naranja claro */
+    }
+}
+ /* Pantallas Escritorios y pantallas grandes (mayores a 1200px)*/
+ @media (min-width: 1200px){
+
+    body{
+        background-color: #03ff77; /* verde fluorescente */
+    }
+}
