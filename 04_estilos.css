@@ -1,0 +1,74 @@
+/* Se generar reglas globales eliminado márgenes y rellenos por defecto*/
+/* Selector universal: '*' aplica estas reglas a todos los elementos del documento */
+* {
+    margin: 0;                  /* Elimina el margen por defecto de todos los elementos */
+    padding: 0;                 /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box;     /* El ancho y alto incluyen padding y borde */
+}
+/* Estilos para el cuerpo de la página*/
+body{
+    font-family: 'Poppins', sans-serif;     /* Fuente para el cuerpo de la página */
+    padding: 50px;                          /* Espaciado interno en todo el cuerpo */
+    text-align: center;
+}
+/* Título principal (h1) */
+h1{
+    font-size: 70px;                                      /* Tamaño de letra para el título */
+    padding: 10px;                                        /* Espaciado interno dentro del título */
+    text-align: center;                                   /* Centrado horizontal */
+    margin-bottom: 20px;                                  /* Separación con el contenido siguiente */
+}
+/* Estilo para párrafos */
+p {
+    font-size: 50px;               /* Tamaño de fuente 30px para texto */
+    margin-top: 30px;              /* Espacio por encima del párrafo */
+    margin-bottom: 20px;           /* Espacio debajo del párrafo */
+    text-align: left;
+}
+/* Imágen */
+img {
+    height: auto;                     /* La altura se ajusta automáticamente al contenido interno */
+    width: 90%;                       /* 80% de ancho de la pantalla */
+    border: solid blue 10px;       /* Borde negro grueso */
+}
+/* Media Queries (Diseño responsivo) */
+/* Tablet: hasta 992px */
+@media (max-width: 992px) {
+    body {
+        padding: 30px;     /* Menos espacio alrededor del contenido */
+    }
+
+    h1 {
+        font-size: 50px;    /* Título más pequeño en pantallas medianas */
+    }
+
+    p {
+        font-size: 30px;   /* Texto más pequeño */
+    }
+
+    img {
+        width: 80%;                     /* Imagen con un ancho del 80% */
+        border: solid black 8px;     /* Borde más delgado y se cambia a color negro */
+    }
+}
+
+/* Móvil: hasta 768px */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;              /* Menos espacio alrededor del contenido */
+    }
+
+    h1 {
+        font-size: 36px;            /* Texto más pequeño */
+    }
+
+    p {
+        font-size: 22px;             /* Texto más pequeño */
+        text-align: center;          /* Centra el texto en el celular para mejor presentación */
+    }
+
+    img {
+        width: 95%;                  /* Imagen con un ancho del 95% */
+        border: solid pink 8px;    /* Borde más delgado todavía y se cambia a color rosado */
+    }
+}
