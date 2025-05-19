@@ -1,0 +1,52 @@
+/* Se generar reglas globales eliminado márgenes y rellenos por defecto*/
+/* Selector universal: '*' aplica estas reglas a todos los elementos del documento */
+* {
+    margin: 0;                  /* Elimina el margen por defecto de todos los elementos */
+    padding: 0;                 /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box;     /* El ancho y alto incluyen padding y borde */
+}
+/* Estilos para el cuerpo de la página*/
+body{
+    font-family: 'Poppins', sans-serif;     /* Fuente para el cuerpo de la página */
+    padding: 50px;                          /* Espaciado interno en todo el cuerpo */
+    background-image: url(Imagenes_Tamaño/Pantallas\ sea.jpg);   /* Imagen de fondo  para pantallas  */
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;  /* Fuente clásica para el título principal */
+    font-size: 50px;                               /* Tamaño grande para destacar */
+    color: black;                                /* Color de texto negro  */
+}
+@media (max-width: 768px){
+    body {
+        background-image: url(Imagenes_Tamaño/Móviles.jpg);         /* Imagen de fondo adaptada para móviles */
+    }
+
+    h1 {
+        font-family: 'Times New Roman', Times, serif;            /* Se mantiene la fuente */
+        font-size: 50px;                                         /* Tamaño del título igual */
+        color: white;                                           /* Texto blanco para mejor contraste en móviles */
+    }
+}
+@media (min-width: 992px){
+    body {
+        background-image: url(Imagenes_Tamaño/Tablets\ Medianas.jpg);        /* Fondo adaptado a tablets medianas */
+    }
+
+    h1 {
+        font-family: 'Times New Roman', Times, serif;          /* Se mantiene la fuente */
+        font-size: 50px;                                       /* Tamaño del título igual */
+        color: white;                                       /* Texto blanco sobre fondo oscuro */
+    }
+}
+@media (min-width: 1200px){
+    body {
+        background-image: url(Imagenes_Tamaño/Pantalla\ Grandes.jpg);         /* Imagen para pantallas grandes */
+        background-size: cover;                                               /* Ajusta la imagen para cubrir todo el área visible */
+        background-repeat: no-repeat;                                         /* Evita que se repita la imagen de fondo */
+    }
+    h1 {
+        font-family: 'Times New Roman', Times, serif;          /* Se mantiene la fuente */
+        font-size: 50px;                                       /* Tamaño del título igual */
+        color: white;                                       /* Texto blanco sobre fondo oscuro */
+    }
+}
