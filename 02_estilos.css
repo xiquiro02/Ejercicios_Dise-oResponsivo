@@ -1,0 +1,92 @@
+/* Se generar reglas globales eliminado márgenes y rellenos por defecto*/
+/* Selector universal: '*' aplica estas reglas a todos los elementos del documento */
+* {
+    margin: 0;                  /* Elimina el margen por defecto de todos los elementos */
+    padding: 0;                 /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box;     /* El ancho y alto incluyen padding y borde */
+}
+/* Estilos para el cuerpo de la página*/
+body{
+    font-family: 'Poppins', sans-serif;     /* Fuente para el cuerpo de la página */
+    padding: 50px;                          /* Espaciado interno en todo el cuerpo */
+    text-align: center;
+}
+/* Título principal (h1) */
+h1{
+    font-size: 50px;                                      /* Tamaño de letra para el título */
+    padding: 10px;                                        /* Espaciado interno dentro del título */
+    text-align: center;                                   /* Centrado horizontal */
+    margin-bottom: 20px;                                  /* Separación con el contenido siguiente */
+}
+/* Contenedor principal */
+.contenedor {
+    display: inline-block;     /* Alineación horizontal sin ocupar todo el ancho */
+    padding: 2%;               /* Espaciado interno */
+    text-align: center;        /* Centra su contenido */
+}
+
+/* Caja dentro del contenedor */
+.box {
+    height: 40vh;              /* 40% del alto de la ventana */
+    width: 33vw;               /* 33% del ancho de la ventana */
+    padding: 25px;             /* Espaciado interno */
+    border-radius: 30px;       /* Bordes redondeados */
+    margin-top: 20px;          /* Separación con elementos anteriores */
+}
+
+/* Imagen dentro de la caja */
+.box img {
+    height: auto;                     /* La altura se ajusta automáticamente al contenido interno */
+    width: 80%;                       /* 80% de ancho de la pantalla */
+    border: solid black 10px;       /* Borde negro grueso */
+}
+
+/* Media Queries (Diseño responsivo) */
+/* Breakpoint 1: 1200px (pantalla grande >= 1200px) */
+@media (min-width: 1200px) {
+    body {
+        background-color: #87e0fa;       /* Azul claro */
+    }
+    h1 {
+        color: black;
+    }
+    .contenedor {
+        background-color: #ffec03;      /* Amarillo */
+    }
+    .box {
+        background-color: #03ff70;    /* Verde neón */
+        text-align: center;             /* Alineación centrada */
+    }
+}
+/* Breakpoint 2: 992px (pantalla mediana ≤ 992px) */
+@media (max-width: 992px) {
+    body {
+        background-color: #b503ff;          /* Púrpura */
+    }
+    h1 {
+        color: #03fff7;                     /* Cian */
+    }
+    .contenedor {
+        background-color: #ff0385;          /* Rosa fuerte */
+    }
+    .box {
+        background-color: #0398ff;          /* Azul intenso */
+        text-align: right;                    /* Alineación a la derecha */
+    }
+}
+/* Breakpoint 3: 768px (pantalla tablet ≤ 768px) */
+@media (max-width: 768px) {
+    body {
+        background-color: #faf387;          /* Amarillo claro */
+    }
+    h1 {
+        color: black;
+    }
+    .contenedor {
+        background-color: #7930ff;          /* Violeta */
+    }
+    .box {
+        background-color: #d587fa;          /* Lavanda */
+        text-align: left;                     /* Alineación a la izquierda */
+    }
+}
