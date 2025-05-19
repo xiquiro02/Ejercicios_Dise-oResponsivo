@@ -1,0 +1,92 @@
+/* Se generar reglas globales eliminado márgenes y rellenos por defecto*/
+/* Selector universal: '*' aplica estas reglas a todos los elementos del documento */
+* {
+    margin: 0;                  /* Elimina el margen por defecto de todos los elementos */
+    padding: 0;                 /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box;     /* El ancho y alto incluyen padding y borde */
+}
+/* Estilos para el cuerpo de la página*/
+body{
+    font-family: 'Poppins', sans-serif;     /* Fuente para el cuerpo de la página */
+    padding: 50px;                          /* Espaciado interno en todo el cuerpo */
+}
+/* Título principal (<h1>) */
+h1 {
+    text-align: center;       /* Centra el texto horizontalmente */
+    margin-bottom: 40px;      /* Agrega espacio debajo del título */
+}
+/* Formulario principal */
+form {
+    width: 800px;                       /* Ancho fijo 800px del formulario */
+    padding: 30px;                      /* Espacio interno alrededor del contenido */
+    margin: 0 auto;                     /* Centra horizontalmente */
+    border: solid blue 5px;           /* Borde de 5 píxeles, color azul */
+    background-color: #acfaf0;        /* Color de fondo azul claro */
+    border-radius: 8px;                 /* Bordes redondeados */
+}
+/* Cada bloque dentro del formulario */
+form div {
+    display: block;          /* Se comporta como un bloque (ocupa toda la línea) */
+    width: 200px;            /* Ancho fijo de 200px*/
+}
+form label {
+    margin-bottom: 5px;      /* Espacio inferior respecto al input */
+    font-weight: bold;       /* Texto en negrita */
+}
+form input {
+    padding: 9px;                    /* Espacio interno dentro del campo */
+    font-size: 20px;                 /* Tamaño del texto */
+    border-radius: 4px;              /* Bordes redondeados */
+    border: 1px solid #000000;     /* Borde negro delgado */
+}
+/* Botón de envío */
+button {
+    padding: 15px 30px;             /* Espacio interno (vertical 15px y horizontal 30px) */
+    font-size: 19px;                /* Tamaño de fuente */
+    border: none;                   /* Sin borde externo */
+    background-color: #007BFF;    /* Fondo azul brillante */
+    color: white;                 /* Texto en color blanco */
+    border-radius: 4px;             /* Bordes redondeados */
+    margin-top: 10px;               /* Espacio superior */
+}
+/* Media Queries (Diseño responsivo) */
+/* móviles (min-width 768px) */
+@media (max-width: 768px){
+    /* Estilos aplicados al formulario en pantallas pequeñas (como celulares) */
+    form {
+        width: 500px;                            /* Reduce el ancho para adaptarse a pantallas pequeñas */
+        padding: 20px;                           /* Reduce el espacio interno */
+        margin: 0 auto;                          /* Centra horizontalmente el formulario */
+        border: solid rgb(65, 198, 255) 5px;   /* Borde celeste claro */
+        background-color: #eebded;             /* Fondo rosado claro para mejor visibilidad */
+        border-radius: 6px;                      /* Bordes suavemente redondeados */
+    }
+    form input {
+        font-size: 15px;                       /* Tamaño de letra más pequeño para aprovechar el espacio */
+    }
+    button {
+        padding: 10px 20px;                    /* Botón más compacto (alto x ancho) */
+        font-size: 19px;                       /* Tamaño de texto */
+        background-color: #174081;           /* Azul oscuro para buen contraste */
+    }
+}
+/* pantallas medianas (min-width 992px) */
+@media (min-width: 992px){
+    /* Estilos del formulario para pantallas medianas  */
+    form {
+        width: 700px;                            /* Ancho más reducido que el original para centrarse mejor */
+        padding: 25px;                           /* Espaciado interno moderado */
+        margin: 0 auto;                          /* Centrado automático */
+        border: solid rgb(65, 255, 81) 5px;    /* Borde verde vibrante */
+        background-color: #faf3a2;             /* Fondo amarillo pastel */
+        border-radius: 6px;                      /* Bordes redondeados */
+    }
+    form input {
+        font-size: 18px;                       /* Tamaño de fuente */
+    }
+    button {
+        padding: 15px 25px;                    /* Botón con espacio amplio  */
+        font-size: 20px;                       /* Tamaño de texto */
+        background-color: #249fcc;           /* Azul claro brillante */
+    }
+}
