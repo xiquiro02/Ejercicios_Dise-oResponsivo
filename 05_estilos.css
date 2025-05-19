@@ -1,0 +1,71 @@
+/* Se generar reglas globales eliminado márgenes y rellenos por defecto*/
+/* Selector universal: '*' aplica estas reglas a todos los elementos del documento */
+* {
+    margin: 0;                  /* Elimina el margen por defecto de todos los elementos */
+    padding: 0;                 /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box;     /* El ancho y alto incluyen padding y borde */
+}
+/* Estilos para el cuerpo de la página*/
+body{
+    font-family: 'Poppins', sans-serif;     /* Fuente para el cuerpo de la página */
+    padding: 50px;                          /* Espaciado interno en todo el cuerpo */
+}
+/* Título principal (h1) */
+h1{
+    font-size: 70px;                                      /* Tamaño de letra para el título */
+    padding: 10px;                                        /* Espaciado interno dentro del título */
+    text-align: center;                                   /* Centrado horizontal */
+    margin-bottom: 20px;                                  /* Separación con el contenido siguiente */
+}
+/* MENÚ DE NAVEGACIÓN */
+.menu ul {
+    list-style: none;                 /* Quita los puntos de la lista */
+    text-align: center;               /* Centra los elementos del menú */
+    background-color: aquamarine;   /* Fondo color agua marina */
+}
+.menu li {
+    border: solid seagreen 5px;         /* Borde verde marino de 5 píxeles */
+}
+/* Enlaces del menú */
+.menu a{
+    display: block;             /* Hace que todo elemento debe comportarse como un elemento de bloque */
+    padding: 20px;              /* Espacio dentro del enlace */
+    text-decoration: none;      /* Quita el subrayado de los enlaces */
+    font-size: 40px;            /* Texto de tamaño 40px para el menú */
+}
+/* Efecto al pasar el mouse sobre los enlaces del menú */
+.menu a:hover {
+    background-color: #ffc4ff;      /* Fondo rosado claro al pasar el mouse */
+}
+.menu li:hover {
+    border: solid #580458 4px;      /* Cambia el color y grosor del borde al pasar el mouse */
+}
+/* Media Queries (Diseño responsivo) */
+/* Menú para móviles (max-width 768px) */
+@media (max-width: 768px) {
+    /* Título más pequeño para que no ocupe tanto espacio */
+    h1{
+        font-size: 50px;         /* Tamaño de letra para el título */                               
+        padding: 5px;            /* Espaciado interno dentro del título */                            
+        text-align: center;      /* Centrado horizontal */                                                
+    }
+    /* Cambia el color de fondo del menú en pantallas pequeñas */
+    .menu ul {
+        background-color: #a6ff0d;      /* Verde fosforescente */
+    }
+    /* Borde del menú cambia de color */
+    .menu li {
+        border: solid #689bf8 5px;      /* Azul claro */
+    }
+    .menu a {
+        padding: 12px;        /* Menos espacio interno */
+        text-align: left;     /* Alineación del texto a la izquierda */
+        font-size: 25px;      /* Letra más pequeña */
+    }
+    .menu a:hover{
+        background-color: #0dbcff;      /* Azul celeste intenso */
+    }
+    .menu li:hover{
+        border: solid #ff1b0d 4px;      /* Borde Rojo intenso de 4 px*/
+    }
+  }

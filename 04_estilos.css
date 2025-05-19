@@ -9,7 +9,7 @@
 body{
     font-family: 'Poppins', sans-serif;     /* Fuente para el cuerpo de la página */
     padding: 50px;                          /* Espaciado interno en todo el cuerpo */
-    text-align: center;
+    text-align: center;                     /* Centra su contenido */
 }
 /* Título principal (h1) */
 h1{
@@ -51,7 +51,6 @@ img {
         border: solid black 8px;     /* Borde más delgado y se cambia a color negro */
     }
 }
-
 /* Móvil: hasta 768px */
 @media (max-width: 768px) {
     body {
