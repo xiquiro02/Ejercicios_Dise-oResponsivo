@@ -1,0 +1,53 @@
+/* Se generar reglas globales eliminado márgenes y rellenos por defecto*/
+/* Selector universal: '*' aplica estas reglas a todos los elementos del documento */
+* {
+    margin: 0;                  /* Elimina el margen por defecto de todos los elementos */
+    padding: 0;                 /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box;     /* El ancho y alto incluyen padding y borde */
+}
+/* Estilos para el cuerpo de la página*/
+body{
+    font-family: 'Poppins', sans-serif;     /* Fuente para el cuerpo de la página */
+    padding: 50px;                          /* Espaciado interno en todo el cuerpo */
+}
+
+/* TÍTULO PRINCIPAL (h1) */
+h1 {
+    font-size: 70px;             /* Tamaño grande de 70px */
+    text-align: center;          /* Centra el texto en la pantalla */
+    color: blue;               /* Color azul para el título */
+}
+/* PÁRRAFO (p) */
+p{
+    font-size: 40px;             /* Tamaño grande de 40px */
+    line-height: 1.5;            /* Espaciado entre líneas */
+    text-align: justify;         /* Alineación justificada */
+    padding: 15px;               /* Espacio interno para el texto */
+    color: saddlebrown;        /* Color marrón suave */
+}
+/* Media Queries (Diseño responsivo) */
+/* tablets, laptops pequeñas (max-width 992px) */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 55px;      /* El título se hace un poco más pequeño 55px */
+        color: green;         /* Cambia a color verde para pantallas medianas */
+    }
+
+    p {
+        font-size: 35px;      /* El texto se adapta a un tamaño 35px */
+        color: blue;        /* Cambia a azul para pantallas medianas */
+    }
+}
+
+/* Móviles (max-width 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;        /* El título se hace mucho más pequeño para pantallas moviles 30px*/
+        color: red;           /* Cambia a rojo para los móviles */
+    }
+
+    p {
+        font-size: 20px;        /* Letra más pequeña para que todo quepa bien en la pantalla 20px */
+        color: black;         /* Cambia a negro para los móviles */
+    }
+}
